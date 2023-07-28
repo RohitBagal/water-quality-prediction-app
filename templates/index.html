@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Water Quality Prediction - Home</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Water Quality Prediction</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('landing') }}">Home</a>
+          <a class="nav-link" href="{{ url_for('predictor') }}">Predictor</a>
+          <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="px-3">
+      <h1>Water Quality Prediction App</h1>
+      <p class="lead"><strong>This application uses machine learning to predict whether water is safe or not for human consumption. Click the button below to enter water quality parameters in the Predictor page and get the prediction.</strong></p>
+      <p class="lead">
+        <a href="{{ url_for('predictor') }}" class="btn btn-lg btn-primary fw-bold border-white bg-black">Predict Water Quality</a>
+      </p>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+        <p>Water Quality Prediction App using <a href="#" class="text-white">Machine Learning</a>, by <a href="#" class="text-white">Rohit</a>.</p>
+    </footer>
+  </div>
+
+</body>
+</html>

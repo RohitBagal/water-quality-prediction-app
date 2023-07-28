@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Quality Prediction - Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Welcome to Water Quality Prediction App</h1>
+        <p class="lead mt-4"><strong>This application uses machine learning to predict whether water is safe or not for human consumption. Enter the water quality parameters in the Predictor page to get the prediction.</strong></p>
+        <div class="d-flex justify-content-center mt-4">
+            <a class="btn btn-primary btn-lg" href="{{ url_for('predictor') }}">Predict Water Quality</a>
+        </div>
+    </div>
+</body>
+</html>
